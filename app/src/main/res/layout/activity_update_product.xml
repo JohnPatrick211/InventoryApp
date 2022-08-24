@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0FF"
+    android:gravity="center_horizontal"
+    tools:context=".UpdateProduct">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@color/design_default_color_primary_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edit_img_product"
+        />
+
+    <TextView
+        android:id="@+id/edit_txt_selectphoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/edit_edt_productname"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="Product Name"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edit_edt_productunit"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="Product Unit"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edit_edt_productprice"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="Product Price"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:id="@+id/edit_tv_productexpirydate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Expiry Date"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edit_edt_productqty"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="Product Qty"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:id="@+id/edit_tv_productinventorycost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Inventory Cost"
+        android:textSize="18dp"/>
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shapebutton"
+            android:id="@+id/btnupdateproduct"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+
+        <Button
+            android:id="@+id/btndeleteproduct"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shapebutton"
+            android:layout_toRightOf="@+id/btnupdateproduct"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
